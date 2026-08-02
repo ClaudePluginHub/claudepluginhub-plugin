@@ -1,0 +1,16 @@
+{
+  "name": "claudepluginhub",
+  "description": "ClaudePluginHub's own plugins — stack-based plugin recommendations for Claude Code.",
+  "owner": {
+    "name": "ClaudePluginHub",
+    "email": "contact@claudepluginhub.com",
+    "url": "https://claudepluginhub.com"
+  },
+  "plugins": [
+    {
+      "name": "claudepluginhub",
+      "source": "./",
+      "description": "Recommends Claude Code plugins matched to your project's tech stack — with evidence, code-execution warnings, and one-command installs."
+    }
+  ]
+}

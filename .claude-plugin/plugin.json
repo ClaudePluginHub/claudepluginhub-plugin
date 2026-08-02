@@ -1,0 +1,14 @@
+{
+  "name": "claudepluginhub",
+  "description": "Recommends Claude Code plugins matched to your project's tech stack — with evidence, code-execution warnings, and one-command installs. Powered by claudepluginhub.com.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ClaudePluginHub",
+    "email": "contact@claudepluginhub.com",
+    "url": "https://claudepluginhub.com"
+  },
+  "homepage": "https://claudepluginhub.com",
+  "repository": "https://github.com/ClaudePluginHub/claudepluginhub-plugin",
+  "license": "MIT",
+  "keywords": ["recommendations", "discovery", "plugins", "marketplace", "stack"]
+}
