@@ -1,6 +1,7 @@
 {
   "name": "claudepluginhub",
   "description": "Search 80,000+ Claude Code plugins, skills, agents, commands, hooks and MCP servers from inside Claude Code, and get plugin recommendations matched to your project's tech stack. Powered by claudepluginhub.com.",
+  "icon": "./assets/icon.svg",
   "version": "1.1.0",
   "author": {
     "name": "ClaudePluginHub",
