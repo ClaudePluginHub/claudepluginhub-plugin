@@ -1,9 +1,9 @@
-# ClaudePluginHub — plugin recommender for Claude Code
+# ClaudePluginHub — plugin search and recommendations for Claude Code
 
-Ask Claude Code which plugins fit your project. This plugin detects your project's tech
-stack and recommends Claude Code plugins from the
-[ClaudePluginHub directory](https://claudepluginhub.com) — with evidence for each pick,
-explicit warnings for plugins that execute code on your machine, and one-command installs.
+Find Claude Code plugins without leaving Claude Code. Search the
+[ClaudePluginHub directory](https://claudepluginhub.com) — 80,000+ plugins and their skills,
+agents, commands, hooks and MCP servers, indexed from thousands of marketplaces on GitHub — or
+let Claude recommend plugins that fit your project's tech stack.
 
 ## Install
 
@@ -23,7 +23,17 @@ Or directly from this repository:
 
 ## Use
 
-In any project:
+Search for something that does a specific job:
+
+```
+/claudepluginhub:find postgres migrations
+```
+
+Claude shows the matching plugins and components with links, and installs the one you pick.
+It also searches on its own when you ask things like "is there a skill for reviewing PRs for
+security issues?".
+
+Get recommendations for the current project:
 
 ```
 /claudepluginhub:recommend
@@ -44,6 +54,8 @@ when you ask things like "which Claude Code plugins should I use for this projec
 
 ## Privacy
 
+`find` sends only your search phrase to claudepluginhub.com, anonymously.
+
 Stack detection runs through the [`claudepluginhub` CLI](https://www.npmjs.com/package/claudepluginhub),
 which reads only dependency **names** from local manifests and a fixed allowlist of
 well-known config **filenames** (like `next.config`, `go.mod`). File contents never leave
@@ -51,7 +63,7 @@ your machine. Requests are anonymous.
 
 ## Requirements
 
-- Node 18+ (the skill runs `npx claudepluginhub`)
+- `curl` for `find`; Node 18+ for `recommend` and installs (they run `npx claudepluginhub`)
 
 ## License
 

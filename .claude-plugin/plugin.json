@@ -1,7 +1,7 @@
 {
   "name": "claudepluginhub",
-  "description": "Recommends Claude Code plugins matched to your project's tech stack — with evidence, code-execution warnings, and one-command installs. Powered by claudepluginhub.com.",
-  "version": "1.0.0",
+  "description": "Search 80,000+ Claude Code plugins, skills, agents, commands, hooks and MCP servers from inside Claude Code, and get plugin recommendations matched to your project's tech stack. Powered by claudepluginhub.com.",
+  "version": "1.1.0",
   "author": {
     "name": "ClaudePluginHub",
     "email": "contact@claudepluginhub.com",
@@ -10,5 +10,5 @@
   "homepage": "https://claudepluginhub.com",
   "repository": "https://github.com/ClaudePluginHub/claudepluginhub-plugin",
   "license": "MIT",
-  "keywords": ["recommendations", "discovery", "plugins", "marketplace", "stack"]
+  "keywords": ["search", "recommendations", "discovery", "skills", "mcp", "plugins", "marketplace", "stack"]
 }

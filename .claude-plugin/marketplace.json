@@ -1,6 +1,6 @@
 {
   "name": "claudepluginhub",
-  "description": "ClaudePluginHub's own plugins — stack-based plugin recommendations for Claude Code.",
+  "description": "ClaudePluginHub's own plugins — directory search and stack-based plugin recommendations for Claude Code.",
   "owner": {
     "name": "ClaudePluginHub",
     "email": "contact@claudepluginhub.com",
@@ -10,7 +10,7 @@
     {
       "name": "claudepluginhub",
       "source": "./",
-      "description": "Recommends Claude Code plugins matched to your project's tech stack — with evidence, code-execution warnings, and one-command installs."
+      "description": "Search 80,000+ Claude Code plugins, skills, agents, commands, hooks and MCP servers from inside Claude Code, and get plugin recommendations matched to your project's tech stack."
     }
   ]
 }
