@@ -1,7 +1,7 @@
 ---
 description: Search the ClaudePluginHub directory (80,000+ Claude Code plugins and their skills, agents, commands, hooks and MCP servers, across thousands of marketplaces) for something that does a specific job. Use when the user asks for a plugin, skill, agent, command, hook or MCP server that does X ("is there a skill for…", "find me a plugin that…", "any MCP server for…"), or when the /plugin Discover tab doesn't have it.
 argument-hint: <what you need, e.g. "postgres migrations">
-allowed-tools: Bash
+allowed-tools: Bash(curl -sS -G --max-time 30 https://www.claudepluginhub.com/api/search:*)
 ---
 
 # Find plugins and components
@@ -18,7 +18,7 @@ claudepluginhub.com.
 ## Step 2 — Search
 
 ```bash
-curl -sS -G --max-time 30 "https://www.claudepluginhub.com/api/search" \
+curl -sS -G --max-time 30 https://www.claudepluginhub.com/api/search \
   --data-urlencode "q=<query>" \
   --data-urlencode "surface=claude_code_plugin" \
   -w '\nHTTP %{http_code}\n'

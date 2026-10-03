@@ -1,6 +1,6 @@
 ---
 description: Recommend Claude Code plugins for the current project based on its detected tech stack. Use when the user asks which Claude Code plugins, skills, or tools they should install for this project, asks for plugin recommendations, or wants to discover plugins that fit their stack.
-allowed-tools: Bash, Read
+allowed-tools: Bash(npx -y claudepluginhub@latest recommend:*), Read
 ---
 
 # Recommend plugins for this project
